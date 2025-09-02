@@ -19,6 +19,26 @@
       </button>
     </div>
     
+    <div id="preview" style="display:none;">
+      <div style="margin-bottom:8px; font-size:12px; opacity:.9;">Preview</div>
+      <div style="max-height:320px; overflow:auto; background:rgba(255,255,255,0.08); border-radius:8px; padding:6px;">
+        <img id="previewImg" alt="screenshot preview" style="max-width:100%; height:auto; display:block;" />
+      </div>
+      <div class="button-group" style="margin-top:12px;">
+        <button id="downloadBtn" class="btn btn-primary">⬇️ Download</button>
+        <button id="retakeBtn" class="btn btn-secondary">↩️ Retake</button>
+      </div>
+    </div>
+    
+    <!-- Lightbox modal for enlarged preview -->
+    <div id="lightbox" style="display:none; position:fixed; inset:0; z-index:9999;">
+      <div id="lightboxBackdrop" style="position:absolute; inset:0; background:rgba(0,0,0,0.65);"></div>
+      <div id="lightboxContent" style="position:absolute; inset:24px; background:rgba(0,0,0,0.25); border-radius:10px; overflow:auto; display:flex; align-items:center; justify-content:center;">
+        <button id="lightboxClose" class="btn btn-secondary" style="position:absolute; top:10px; right:10px;">Back</button>
+        <img id="lightboxImg" alt="full preview" style="max-width:100%; max-height:100%; display:block;" />
+      </div>
+    </div>
+
     <div class="info">
       <p><strong>Visible Area:</strong> Captures what you can see on screen</p>
       <p><strong>Entire Page:</strong> Captures the full webpage including hidden content</p>

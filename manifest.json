@@ -5,6 +5,7 @@
     "description": "Take screenshots of visible area and entire webpage",
     "permissions": [
       "activeTab",
+      "tabs",
       "scripting",
       "downloads"
     ],
